@@ -1,0 +1,25 @@
+{
+  "name": "format-date",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -b index.test.js",
+    "test:watch": "onchange \"./*.js\" -- npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PioterDz/format-date.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PioterDz/format-date/issues"
+  },
+  "homepage": "https://github.com/PioterDz/format-date#readme",
+  "devDependencies": {
+    "mocha": "^6.2.0",
+    "onchange": "^6.0.0"
+  }
+}
