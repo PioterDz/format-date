@@ -1,15 +1,12 @@
 const formatDate = (time) => {
-    
+
     let sec;
     let min;
     let hours;
 
     condition = (num, d) => {
-        if (num === 0) {
-            return '';
-        } else {
-            return num + d;
-        }
+        if (num === 0) return '';
+        else return num + d;
     }
 
     countSec = (t) => {
@@ -19,20 +16,14 @@ const formatDate = (time) => {
 
     countMin = (t) => {
         const m = (Math.floor(t / 60) % 60);
-        if(t % 60 === 0) {
-            return condition(m, 'm');
-        } else {
-            return condition(m, 'm ');
-        }
+        if(t % 60 === 0) return condition(m, 'm');
+        else return condition(m, 'm ');
     }
 
     countHours = (t) => {
         const h = Math.floor(t / 3600);
-        if(t % 3600 === 0) {
-            return condition(h, 'h');
-        } else {
-            return condition(h, 'h ');
-        }
+        if(t % 3600 === 0) return condition(h, 'h');
+        else return condition(h, 'h ');
     }
 
     if(!time || time <= 0) { 
